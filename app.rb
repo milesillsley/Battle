@@ -15,6 +15,7 @@ class Battle < Sinatra::Base
   end
 
   get '/play' do
+    @P2_hit_points = 5
     @P1 = session[:P1]
     @P2 = session[:P2]
     erb :play
