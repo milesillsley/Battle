@@ -1,7 +1,9 @@
 class Player
 
-  def name
-    "Jess"
+  attr_reader :name
+
+  def initialize(name)
+    @name = name
   end
 
 end
